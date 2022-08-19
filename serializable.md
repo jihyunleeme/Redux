@@ -1,4 +1,4 @@
-# 왜 type은 string이거나 적어도 serialiable이어야할까? 왜 상수 타입은 상수여야할까?
+# 왜 type은 string이거나 적어도 serialiable이어야할까? 왜 action 타입은 상수여야할까?
 
 - serializable actions은 state와 마찬가지로 Redux가 정의하는 몇가지 기능들인 타임 트래블 디버깅, 기록, 액션 재실행 같은 것을 가능하게 해준다.
 - `type` value에 `Symbol` 또는 `instanceof` 검사를 사용하면 오류 남.
@@ -13,6 +13,5 @@
 - 직렬화(Serialization) : 객체와 데이터 구조를 네트워크나 스토리지(Array buffer나 file 포맷으로)을 통한 전송에 적함한 포맷으로 변환되는 프로세스. 예를 들어, 자바스크립트에서는 함수 `JSON.stiringfy()`을 호출함으로써 object을 JSON 스트링으로 직렬화 할 수 있다.
 
 - 역직렬화(Deseiralization) : 로우 레벨 포맷이(네트워크, 데이터 저장소에 전송됨) 읽을수 있는 객체나 다른 데이터 구조로 변환되는 프로세스. 예를 들어, JavaScript에서는 함수 JSON.parse()를 호출함으로써 JSON 스트링을 객체로 역직렬화 할 수 있다.
-
 
 - https://redux.js.org/faq/actions#why-should-type-be-a-string-or-at-least-serializable-why-should-my-action-types-be-constants
