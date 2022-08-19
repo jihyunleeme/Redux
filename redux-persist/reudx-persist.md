@@ -13,6 +13,17 @@ redux-persist의 주요기능
 - 큰 주요 기능 `blacklist`와 `whitelist`
 - 얕은 레벨과 깊은 레벨의 유지를 위한 중첩 persistence
 
+## persistor object
+
+- `.purge()`
+  - 디스크에서 상태 제거, Promise 반환
+- `.flush()`
+  - 즉시 모든 보류상태 디스크에 쓰고 Promise 반환
+- `.pause()`
+  - 지속성 일시정지
+- `.persist()`
+  - 지속성 재개
+
 https://stackoverflow.com/questions/49222396/why-use-redux-persist-over-manually-persisting-state-to-localstorage
 
 https://haragoo30.medium.com/redux-persist%EB%A5%BC-%EC%86%8C%EA%B0%9C%ED%95%A9%EB%8B%88%EB%8B%A4-94cb7c8d7020
