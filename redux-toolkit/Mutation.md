@@ -1,8 +1,11 @@
 # Mutations
+
 ## Overview
+
 Mutations은 서버로 데이터를 전송하거나 로컬 캐쉬에 변경사항을 적용하는데 사용된다. Mutations은 또한 data를 cache를 무효화 하거나 re-fetch를 강제할수있다.
 
 ## Mutation Endpoints 정의하기
+
 Mutation Endpoint는 `createApi`의 `endpoints` 영역 내에서 객체를 반환하고, `build.mutation()` 메소드를 사용하는 필드를 규정함으로써 정의됩니다.
 
 Mutation endpoints는 URL을 구성하는 `query` 콜백(모든 URL 쿼리 매개변수 포함) 또는 임의의 비동기 논리를 수행하고 결과를 반환할 수 있는 queryFn콜백 을 정의해야 합니다. 콜백 은 queryURL, 사용할 HTTP 메서드 및 요청 본문을 포함하는 개체를 반환할 수도 있습니다.
